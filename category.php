@@ -43,7 +43,7 @@ function deleteConfirm() {
             <?php
                 include_once("connection.php");
                 $No=1;
-                $result = pg_query($conn,"SELECT * FROM category");
+                $result = pg_query($conn,"SELECT * FROM public.category");
                 while($row = pg_fetch_array($result,NULL,PGSQL_ASSOC))
                 { 
             ?>
